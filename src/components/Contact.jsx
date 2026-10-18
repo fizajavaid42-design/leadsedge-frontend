@@ -26,8 +26,8 @@ export default function Contact() {
     setStatus("Sending...");
 
     try {
-      // FastAPI backend par data bhejna
-      const response = await fetch("http://127.0.0.1:8000/api/contact", {
+      // Live FastAPI backend par data bhejna (Link Updated)
+      const response = await fetch("https://leadsedge-backend-topaz.vercel.app/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
