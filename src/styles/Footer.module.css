@@ -1,0 +1,78 @@
+.footer {
+    background-color: var(--bg);
+    border-top: 1px solid var(--border);
+    padding: 60px 5% 30px;
+    margin-top: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.brand {
+    max-width: 300px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.description {
+    color: var(--text-muted);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.linksGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.title {
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.link {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: var(--accent-blue);
+}
+
+.copyright {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+.footerLink {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.footerLink:hover {
+    color: var(--accent-blue); /* Hover par gold/blue ho jayega */
+}

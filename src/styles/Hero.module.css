@@ -1,0 +1,151 @@
+.heroSection {
+    background-color: var(--bg-light); /* White Background */
+    padding: 80px 5% 100px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Left Side Styling */
+.textContent {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.badge {
+    color: var(--accent-blue);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+}
+
+.heading {
+    font-size: 52px;
+    font-weight: 800;
+    color: var(--text-dark); /* Dark Text (Black/Dark Blue vibe) */
+    line-height: 1.15;
+}
+
+.description {
+    color: var(--text-dark-muted);
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 90%;
+}
+
+.btnGroup {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.primaryBtn {
+    background-color: var(--accent-blue);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.primaryBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3); /* Gold shadow */
+}
+
+.secondaryBtn {
+    background-color: transparent;
+    color: var(--text-dark);
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid var(--text-dark-muted);
+    transition: all 0.3s ease;
+}
+
+.secondaryBtn:hover {
+    background-color: var(--text-dark);
+    color: white;
+}
+
+/* Stats Section with Animations */
+.statsContainer {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #eaeaea;
+}
+
+.statNumber {
+    font-size: 42px;
+    color: var(--text-dark); /* Black numbers */
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.statText {
+    color: var(--text-dark-muted);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.statDivider {
+    width: 2px;
+    height: 60px;
+    background-color: #eaeaea;
+}
+
+/* Right Side: Image Styling */
+.imageSide {
+    position: relative;
+    width: 100%;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    /* Screenshot jaisa shape: Top-Left aur Bottom-Right kam gol hain, baqi zyada */
+    border-radius: 40px 140px 40px 140px; 
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.imageWrapper:hover .image {
+    transform: scale(1.08); /* Premium slow zoom on hover */
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .imageWrapper {
+        height: 400px;
+        border-radius: 30px 80px 30px 80px;
+    }
+    .heading {
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,74 @@
+.section {
+    padding: 150px 5% 100px; /* Upar se jagah chhorne ke liye 150px kiya */
+    background-color: var(--bg); 
+    border-top: 1px solid var(--border);
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.header {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    color: var(--accent-blue);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.title {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--text); /* White text */
+    line-height: 1.2;
+}
+
+.textGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.featureDesc {
+    font-size: 15px;
+    color: var(--text-muted); /* Light gray */
+    line-height: 1.8;
+}
+
+.imageGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.gridImage {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+.gridImage:hover {
+    transform: translateY(-10px); /* Hover par picture upar jayegi */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 992px) {
+    .textGrid, .imageGrid {
+        grid-template-columns: 1fr;
+    }
+}
